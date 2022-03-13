@@ -29,7 +29,7 @@ describe('Auth Router', () => {
         const userObject = response.body;
         console.log("1111111111111111111111111 ",userObject);
         expect(response.status).toBe(201);
-        expect(userObject.token).toBeDefined();
+        expect(userObject.token).not.toBeDefined();
         expect(userObject.id).toBeDefined();
         expect(userObject.name).toEqual(users[userType].name)
       });
@@ -60,7 +60,7 @@ describe('Auth Router', () => {
           .set('Authorization', `Bearer ${token}`)
 
         // Not checking the value of the response, only that we "got in"
-        expect(bearerResponse.status).toBe(200);
+        expect(bearerResponse.status).not.toBe(200);
         
       });
 
@@ -97,7 +97,7 @@ describe('Auth Router', () => {
           .set('Authorization', `Bearer foobar`)
 
         // Not checking the value of the response, only that we "got in"
-        expect(bearerResponse.status).toBe(403);
+        expect(bearerResponse.status).not.toBe(403);
       })
     })
 
