@@ -3,7 +3,7 @@
 const server =require('../index.js');
 const supertest=require('supertest');
 const req=supertest(server);//this line is to start fake test by using the req 
-const {db}=require('../models/seq-index.js');
+const {db}=require('../src/models/seq-index.js');
 
 
 
