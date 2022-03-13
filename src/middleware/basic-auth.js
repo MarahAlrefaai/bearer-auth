@@ -16,12 +16,13 @@ const basicAuth = async (req, res, next) => {
 
     try {
       const userSigned = await user.findOne({ where: { name: name } });
+      
       const valid = await bcrypt.compare(password, userSigned.password);
       if (valid) {
         //create new instance in the req
         req.userSigned = userSigned;
         //-----------------------------------------
-        //create token 
+        //create token  this is for secure 
         let token = jwt.sign({ name: userSigned.name }, Secret, { expiresIn: '15 min' });
         userSigned.token = token;
        res.status(200).json(userSigned);
