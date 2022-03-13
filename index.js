@@ -22,8 +22,8 @@ app.get('/',(req,res)=>{//this is a rout
 app.use('*',notfoundError);
 app.use(errorHandler);
 db.sync().then(()=>{
-  app.listen(PORT||3000,()=>{
-    console.log("server is listening ")
+  app.listen(PORT ||3000,()=>{
+    console.log("server is listening  ")
   })
 })
 

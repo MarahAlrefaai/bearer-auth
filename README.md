@@ -8,10 +8,11 @@ Authentication Server Phase 2: Token (Bearer) Authentication  At this point, our
 ![alt text](bearerAout.jpg)
 
 ### pull requist
-[pull requist](https://github.com/MarahAlrefaai/bearer-auth/pull/3)
+[pull requist](https://github.com/MarahAlrefaai/bearer-auth/pull/5)
 ---
 ### action 
 [action](https://github.com/MarahAlrefaai/bearer-auth/actions)
 ---
 ### heroku 
-[heroku](https://marah-bearerauth-adv.herokuapp.com/
+[heroku](https://marah-bearerauth-adv.herokuapp.com/)
+---
