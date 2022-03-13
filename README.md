@@ -14,4 +14,4 @@ Authentication Server Phase 2: Token (Bearer) Authentication  At this point, our
 [action](https://github.com/MarahAlrefaai/bearer-auth/actions)
 ---
 ### heroku 
-[heroku](https://marah-bearerauth-adv.herokuapp.com/
+[heroku](https://marah-bearerauth-adv.herokuapp.com/)
