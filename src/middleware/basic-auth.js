@@ -4,7 +4,7 @@ const { user } = require('../models/seq-index.js');
 const bcrypt = require('bcrypt');
 const base64 = require('base-64');
 const jwt = require('jsonwebtoken');
-const Secret = process.env.SECRET;
+const Secret = process.env.SECRET||"firstTestToken";
 
 const basicAuth = async (req, res, next) => {
 
